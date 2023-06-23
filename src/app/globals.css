@@ -45,7 +45,7 @@
 }
 
 .filters-icon > span {
-    opacity: 0;
+    display: none;
     position: absolute;
     inset: 0;
     top: -2.5rem;
@@ -56,10 +56,8 @@
     background-color: rgba(0, 0, 0, .5);
     border-radius: 1rem;
     padding: 0 .5rem;
-    transition: .5s ease;
 }
 
 .filters-icon:hover > span {
-    display: inline-block;
-    opacity: 1;
+    display: block;
 }

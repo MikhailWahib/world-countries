@@ -7,10 +7,10 @@ type Props = {
 	flag: string
 }
 
-const Card = ({ name, flag }: Props) => {
+const CountryCard = ({ name, flag }: Props) => {
 	return (
-		<Link href={`/${name}`}>
-			<div className='bg-slate-800/50 rounded-xl w-full max-w-[280px] h-80 overflow-clip ring-1 ring-slate-700/50 hover:shadow-glow-1 transition-all duration-500'>
+		<div className='bg-slate-800/50 rounded-xl w-full max-w-[280px] h-80 overflow-clip ring-1 ring-slate-700/50 hover:shadow-glow-1 transition-all duration-500'>
+			<Link href={`/${name}`}>
 				<Image
 					src={flag}
 					alt={`${name}-flag`}
@@ -18,9 +18,9 @@ const Card = ({ name, flag }: Props) => {
 					height={500}
 					className='h-44'
 				/>
-			</div>
-		</Link>
+			</Link>
+		</div>
 	)
 }
 
-export default Card
+export default CountryCard

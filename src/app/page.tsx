@@ -1,10 +1,10 @@
 import { Country } from '@/types/Country'
 import Topbar from '@/components/Topbar'
-import CountryCard from '@/components/CountryCard'
 import Filters from '@/components/Filters'
 import Searchbar from '@/components/Searchbar'
+import CountriesList from '@/components/CountriesList'
 
-const getData = async () => {
+const getData = async (): Promise<Country[]> => {
 	const res = await fetch(
 		'https://restcountries.com/v3.1/all?fields=name,flags'
 	)
@@ -12,7 +12,7 @@ const getData = async () => {
 }
 
 export default async function Home() {
-	const countries: Array<Country> = await getData()
+	const countries = await getData()
 
 	return (
 		<main className='bg-slate-900 min-h-screen w-full'>
@@ -22,17 +22,7 @@ export default async function Home() {
 					<Searchbar />
 					<Filters />
 				</div>
-				<div className='w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center gap-x-10 gap-y-10'>
-					{countries.map((country, i) => {
-						return (
-							<CountryCard
-								key={i}
-								name={country.name.common}
-								flag={country.flags.png}
-							/>
-						)
-					})}
-				</div>
+				<CountriesList countries={countries} />
 			</div>
 		</main>
 	)
