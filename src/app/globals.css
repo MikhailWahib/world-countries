@@ -44,8 +44,9 @@
     position: relative;
 }
 
-.filters-icon > span {
+.filters-icon > div {
     display: none;
+    justify-content: center;
     position: absolute;
     inset: 0;
     top: -2.5rem;
@@ -58,6 +59,6 @@
     padding: 0 .5rem;
 }
 
-.filters-icon:hover > span {
-    display: block;
+.filters-icon:hover > div {
+    display: flex;
 }
