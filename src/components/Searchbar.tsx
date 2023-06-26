@@ -6,9 +6,9 @@ const Searchbar: React.FC = () => {
 
 	const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 		if (e.target.value) {
-			router.push(`/countries/search/${e.target.value}`)
+			router.push(`/search/${e.target.value}`)
 		} else {
-			router.push('/countries')
+			router.push('/')
 		}
 	}
 

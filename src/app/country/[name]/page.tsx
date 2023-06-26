@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react'
 
 type Props = {
 	params: {
-		country: string
+		name: string
 	}
 }
 
@@ -22,7 +22,7 @@ const page: React.FC<Props> = ({ params }) => {
 	}
 
 	useEffect(() => {
-		getData(params.country)
+		getData(params.name)
 	}, [])
 
 	const router = useRouter()

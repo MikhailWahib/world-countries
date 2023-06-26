@@ -8,27 +8,27 @@ const continents = [
 	{
 		name: 'Africa',
 		icon: FaGlobeAfrica,
-		href: '/countries/africa',
+		href: '/africa',
 	},
 	{
 		name: 'Americas',
 		icon: BsGlobeAmericas,
-		href: '/countries/americas',
+		href: '/americas',
 	},
 	{
 		name: 'Asia',
 		icon: FaGlobeAsia,
-		href: '/countries/asia',
+		href: '/asia',
 	},
 	{
 		name: 'Europe',
 		icon: FaGlobeEurope,
-		href: '/countries/europe',
+		href: '/europe',
 	},
 	{
 		name: 'Oceania',
 		icon: GiEarthAsiaOceania,
-		href: '/countries/oceania',
+		href: '/oceania',
 	},
 ]
 
@@ -36,7 +36,7 @@ const ContinentsFilter = () => {
 	return (
 		<div className='flex items-center gap-6 sm:gap-4 text-slate-300 text-2xl '>
 			<Link
-				href={'/countries'}
+				href={'/'}
 				className='text-[1rem] hover:text-blue-800 transition duration-500'
 			>
 				All
