@@ -19,14 +19,7 @@ interface Props {
 const page: React.FC<Props> = async ({ params }) => {
 	const data = await getData(params.query)
 
-	return (
-		<main className='bg-slate-900 min-h-screen w-full'>
-			<div className='mx-[5vw] my-10'>
-				<FiltersSec />
-				<CountriesList countries={data} />
-			</div>
-		</main>
-	)
+	return <CountriesList countries={data} />
 }
 
 export default page

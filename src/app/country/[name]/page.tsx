@@ -28,7 +28,7 @@ const page: React.FC<Props> = ({ params }) => {
 	const router = useRouter()
 
 	return (
-		<>
+		<div className='absolute top-0 bg-slate-900'>
 			<button
 				className='inline-block relative my-7 px-2 ml-[8vw] md:my-0 md:top-14 text-slate-200 bg-slate-800 border border-slate-500 rounded'
 				onClick={() => router.back()}
@@ -110,7 +110,7 @@ const page: React.FC<Props> = ({ params }) => {
 					</div>
 				</main>
 			)}
-		</>
+		</div>
 	)
 }
 

@@ -21,10 +21,7 @@ const page: React.FC<Props> = async ({ params }) => {
 
 	return (
 		<main className='bg-slate-900 min-h-screen w-full'>
-			<div className='mx-[5vw] my-10'>
-				<FiltersSec />
-				<CountriesList countries={data} />
-			</div>
+			<CountriesList countries={data} />
 		</main>
 	)
 }

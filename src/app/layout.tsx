@@ -20,13 +20,10 @@ export default function RootLayout({
 		<html lang='en'>
 			<body className={`${inter.className} bg-slate-900`}>
 				<Topbar />
-				{/* <main className='bg-slate-900 min-h-screen w-full'>
-					<div className='mx-[5vw] my-10'>
-						<FiltersSec />
-						{children}
-					</div>
-				</main> */}
-				{children}
+				<main className='bg-slate-900 min-h-screen w-full'>
+					<FiltersSec />
+					{children}
+				</main>
 			</body>
 		</html>
 	)

@@ -7,7 +7,7 @@ interface Props {
 
 const CountriesList: React.FC<Props> = ({ countries }) => {
 	return (
-		<div className='grid place-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-10 gap-x-[4vw]'>
+		<div className='grid place-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-[5vw] gap-y-10 gap-x-[4vw]'>
 			{countries.length > 0 ? (
 				countries.map((country, i) => {
 					return (
