@@ -15,7 +15,7 @@ const Searchbar: React.FC = () => {
 	return (
 		<input
 			type='text'
-			className='bg-slate-800/50 rounded ring-1 ring-slate-700/50 px-3 text-slate-50 focus:outline-1 focus:outline-slate-50 py-0.5 placeholder:opacity-25'
+			className='dark:bg-slate-800/50 bg-slate-200 rounded ring-1 ring-slate-700/50 px-3 dark:text-slate-50 text-slate-900 focus:outline-1 focus:outline-slate-50 py-0.5 placeholder:opacity-50'
 			placeholder='Search any Country ....'
 			onChange={handleChange}
 		/>

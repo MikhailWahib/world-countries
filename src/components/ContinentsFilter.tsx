@@ -34,10 +34,10 @@ const continents = [
 
 const ContinentsFilter = () => {
 	return (
-		<div className='flex items-center gap-6 sm:gap-4 text-slate-300 text-2xl '>
+		<div className='flex items-center gap-6 sm:gap-4 dark:text-slate-300 text-slate-800 text-2xl '>
 			<Link
 				href={'/'}
-				className='text-[1rem] hover:text-blue-800 transition duration-500'
+				className='text-[1rem] font-bold hover:text-blue-800 transition'
 			>
 				All
 			</Link>
@@ -46,10 +46,10 @@ const ContinentsFilter = () => {
 					<Link
 						href={continent.href}
 						key={i}
-						className='filters-icon inline-block rounded-full hover:shadow-glow transition-all duration-500'
+						className='filters-icon inline-block rounded-full hover:shadow-glow transition-all'
 					>
-						<continent.icon className='hover:text-blue-800 transition duration-500' />
-						<div>
+						<continent.icon className='hover:text-blue-800 transition' />
+						<div className='dark:bg-black/50 bg-black/75  text-white'>
 							<span>{continent.name}</span>
 						</div>
 					</Link>

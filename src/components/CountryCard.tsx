@@ -18,7 +18,7 @@ const CountryCard: React.FC<Props> = ({
 	region,
 }) => {
 	return (
-		<div className='group bg-slate-800/50 rounded-xl w-full max-w-[280px] h-80 overflow-clip ring-1 ring-slate-700/50 hover:shadow-glow-1 transition duration-500 transform hover:scale-105'>
+		<div className='group dark:bg-slate-800/50 bg-slate-200 rounded-xl w-full max-w-[280px] h-80 overflow-clip ring-1 ring-slate-700/50 hover:shadow-glow-1 transition duration-500 transform hover:scale-105'>
 			<Link href={`/country/${name}`}>
 				<Image
 					src={flag}
@@ -27,20 +27,28 @@ const CountryCard: React.FC<Props> = ({
 					height={500}
 					className='h-44 aspect-video'
 				/>
-				<div className='px-5 py-5 text-slate-200'>
+				<div className='px-5 py-5 dark:text-slate-200 text-slate-900'>
 					<p className='font-bold text-lg leading-4 transition duration-500 group-hover:text-blue-800'>
 						{name}
 					</p>
 					<div className='mt-2 text-md font-light'>
 						<p>
-							Capital: <span className='text-slate-300 italic'>{capital}</span>
+							Capital:{' '}
+							<span className='dark:text-slate-300 text-slate-800 italic'>
+								{capital}
+							</span>
 						</p>
 						<p>
-							Region: <span className='text-slate-300 italic'>{region}</span>
+							Region:{' '}
+							<span className='dark:text-slate-300 text-slate-800 italic'>
+								{region}
+							</span>
 						</p>
 						<p>
 							Population:{' '}
-							<span className='text-slate-300 italic'>{population}</span>
+							<span className='dark:text-slate-300 text-slate-800 italic'>
+								{population}
+							</span>
 						</p>
 					</div>
 				</div>

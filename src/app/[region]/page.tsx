@@ -19,11 +19,7 @@ type Props = {
 const page: React.FC<Props> = async ({ params }) => {
 	const data = await getData(params.region)
 
-	return (
-		<main className='bg-slate-900 min-h-screen w-full'>
-			<CountriesList countries={data} />
-		</main>
-	)
+	return <CountriesList countries={data} />
 }
 
 export default page

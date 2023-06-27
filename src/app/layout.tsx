@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 
 import Topbar from '@/components/Topbar'
 import FiltersSec from '@/components/FiltersSec'
+import ThemeProvider from '@/context/ThemeProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,12 +19,14 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
-			<body className={`${inter.className} bg-slate-900`}>
-				<Topbar />
-				<main className='bg-slate-900 min-h-screen w-full'>
-					<FiltersSec />
-					{children}
-				</main>
+			<body className={`${inter.className}`}>
+				<ThemeProvider>
+					<div className='min-h-screen w-full bg-slate-200 dark:bg-slate-900'>
+						<Topbar />
+						<FiltersSec />
+						{children}
+					</div>
+				</ThemeProvider>
 			</body>
 		</html>
 	)
