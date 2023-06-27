@@ -18,7 +18,7 @@ const CountryCard: React.FC<Props> = ({
 	region,
 }) => {
 	return (
-		<div className='group dark:bg-slate-800/50 bg-slate-200 rounded-xl w-full max-w-[280px] h-80 overflow-clip ring-1 ring-slate-700/50 hover:shadow-glow-1 transition duration-500 transform hover:scale-105'>
+		<div className='group dark:bg-slate-800/50 bg-slate-200 rounded-xl w-full max-w-[280px] h-80 overflow-clip ring-1 ring-slate-700/50 transition duration-500 transform hover:scale-[1.03]'>
 			<Link href={`/country/${name}`}>
 				<Image
 					src={flag}

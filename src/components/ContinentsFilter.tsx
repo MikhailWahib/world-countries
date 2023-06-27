@@ -46,7 +46,7 @@ const ContinentsFilter = () => {
 					<Link
 						href={continent.href}
 						key={i}
-						className='filters-icon inline-block rounded-full hover:shadow-glow transition-all'
+						className='filters-icon inline-block rounded-full transition-all'
 					>
 						<continent.icon className='hover:text-blue-800 transition' />
 						<div className='dark:bg-black/50 bg-black/75  text-white'>
