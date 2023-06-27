@@ -11,7 +11,7 @@ const Topbar = () => {
 	}
 
 	return (
-		<header className='w-full h-14 dark:bg-slate-950/50 bg-slate-200 dark:text-slate-200 text-slate-900 flex justify-between items-center px-[5vw] shadow-lg'>
+		<header className='w-full h-16 dark:bg-slate-950/50 bg-slate-200 dark:text-slate-200 text-slate-900 flex justify-between items-center px-[5vw] shadow-lg'>
 			<h1 className='text-xl font-bold'>World Countries</h1>
 			<div>
 				<button
