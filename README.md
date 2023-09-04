@@ -1,34 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# World Countries Explorer
 
-## Getting Started
+# [Live Demo](https://world-countries-mw.vercel.app)
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+World Countries Explorer is a simple web application that allows users to explore information about countries from all around the world. The application provides a user-friendly interface with several features for easy navigation and data retrieval.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Server-Side Rendering (SSR):** World Countries Explorer uses Next.js to achieve server-side rendering, ensuring fast initial load times and improved SEO.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. **Country Search:** Easily search for any country by name. The search feature provides real-time filtering as you type, making it quick to find the information you need.
 
-## Learn More
+3. **Continent Filter:** You can filter countries by continent, helping you discover countries within specific regions of the world.
 
-To learn more about Next.js, take a look at the following resources:
+4. **Theme Toggle:** Customize your experience by toggling between light and dark themes, ensuring comfortable browsing in any lighting condition.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Next.js:** A powerful React framework for building server-rendered web applications.
 
-## Deploy on Vercel
+- **React:** The popular JavaScript library for building user interfaces.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **TypeScript:** Enhances code quality and maintainability by adding static typing to JavaScript.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Data Source
+
+World Countries Explorer utilizes an open-source RESTful API to fetch country information. This ensures that the data displayed is up-to-date and accurate.
