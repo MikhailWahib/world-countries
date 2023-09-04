@@ -1,5 +1,4 @@
 import CountriesList from '@/components/CountriesList'
-import FiltersSec from '@/components/FiltersSec'
 import { Country } from '@/types'
 
 const getData = async (query: string): Promise<Country[]> => {

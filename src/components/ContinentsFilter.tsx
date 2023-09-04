@@ -8,27 +8,27 @@ const continents = [
 	{
 		name: 'Africa',
 		icon: FaGlobeAfrica,
-		href: '/africa',
+		href: '/?region=africa',
 	},
 	{
 		name: 'Americas',
 		icon: BsGlobeAmericas,
-		href: '/americas',
+		href: '/?region=americas',
 	},
 	{
 		name: 'Asia',
 		icon: FaGlobeAsia,
-		href: '/asia',
+		href: '/?region=asia',
 	},
 	{
 		name: 'Europe',
 		icon: FaGlobeEurope,
-		href: '/europe',
+		href: '/?region=europe',
 	},
 	{
 		name: 'Oceania',
 		icon: GiEarthAsiaOceania,
-		href: '/oceania',
+		href: '/?region=oceania',
 	},
 ]
 
