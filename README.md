@@ -23,6 +23,8 @@ World Countries Explorer is a simple web application that allows users to explor
 - **React:** The popular JavaScript library for building user interfaces.
 
 - **TypeScript:** Enhances code quality and maintainability by adding static typing to JavaScript.
+  
+- **Tailwind CSS:** The popular CSS framework for styling user interfaces.
 
 ### Data Source
 
